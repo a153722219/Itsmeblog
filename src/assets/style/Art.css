@@ -1,0 +1,53 @@
+#new{
+    width: 90%;
+    height: auto;
+    margin: 30px auto;
+    color: white;
+}
+
+#new p{
+    padding-left: 50px;
+    margin-bottom:30px ;
+
+}
+
+label[for="ctx"]{
+   position: relative;
+    top: -290px;
+}
+#new input[type="text"]{
+
+    width: 380px;
+    height: 30px;
+    background: #000;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size:15px ;
+    border: 1px solid white;
+}
+
+#new input[type="submit"]{
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    left: 340px;
+}
+
+#ctx{
+    width: 380px;
+    height: 300px;
+    background: #000;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size:15px ;
+    border: 1px solid white;
+}

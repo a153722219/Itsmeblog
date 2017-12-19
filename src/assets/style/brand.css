@@ -1,0 +1,96 @@
+#s-navlist{
+	display: none;
+}
+#navlist{
+    display: -webkit-box;
+	display:-ms-flexbox;
+	display :-moz-box;
+    display: box;
+    -webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+    -moz-box-pack: justify; 
+	/*  弹性盒模型
+	    justify 子元素富裕空间平均分配
+	*/
+}
+
+.Xdiv{
+    width: 225px;
+    height:180px;
+}
+.Xdiv a{
+    display: block;
+    position: relative;
+    -webkit-perspective:500px; -moz-perspective:500px;
+	width: 100%;
+		/*  perspective 3D透视深度
+	*/
+}
+
+.Xdiv a>div{
+	top:0;
+	left:0;
+    position: absolute;
+    -webkit-transform-style:preserve-3d;
+    -moz-transform-style:preserve-3d;
+    -ms-transform-style:preserve-3d;/* 动画类型 3D */
+
+    -webkit-backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
+	/*  backface-visibility 背面不可视
+	*/
+
+    -webkit-transition:.8s ease-in-out;
+    -moz-transition:.8s ease-in-out;
+    -ms-transition:.8s ease-in-out;
+}
+
+.Xdiv a div:first-child{
+    -webkit-transform:rotateY(0);
+	-moz-transform:rotateY(0);
+	-ms-transform:perspective(500px) rotateY(0);/* IE9*/
+	z-index:2;
+
+}
+
+.Xdiv a:hover div:first-child{
+    
+	-webkit-transform:rotateY(-180deg);
+	-moz-transform:rotateY(-180deg);
+	-ms-transform:perspective(500px) rotateY(-180deg);
+}
+
+.Xdiv a div:last-child{
+	height:180px;
+	width: 225px;
+    z-index:1;
+	-webkit-transform:rotateY(180deg);
+	-moz-transform:rotateY(180deg);
+	-ms-transform:perspective(500px) rotateY(180deg);
+	background:url(../images/bg.jpg) no-repeat;
+}
+
+.Xdiv a:hover div:last-child{
+
+    -webkit-transform:rotateY(0);
+	-moz-transform:rotateY(0);
+	-ms-transform:perspective(500px) rotateY(0);
+}
+
+.tdiv {
+	color: white;
+}
+
+.tdiv h3{
+	text-align: center;
+	font: 22px/30px "微软雅黑";
+	border-bottom: 1px white dashed;
+}
+.tdiv p{
+	width: 80%;
+	margin: 0 auto;
+	font:14px/28px "微软雅黑";
+	text-indent: 2em;
+}
+

@@ -1,0 +1,31 @@
+<script src="../../../../ng/quickstart-master/src/app/demo13/demo13.component.ts"></script>
+<div id="right">
+  <form *ngIf="!isLogin">
+    <p>LOGIN</p>
+    <p class="pLogin">Username</p>
+    <input type="text" [(ngModel)]="uName"  name="user">
+    <p class="pLogin">Password</p>
+    <input type="password" [(ngModel)]="upwd"  name="password"><br><br>
+    <input name="rememberme" type="checkbox" id="rememberme" value="forever" checked="checked"> Remember Me
+    <br><br>
+    <button (click)="myLogin()">Login</button>
+    <br><br>
+    <a class="link" href="reg.html">SSL Register</a>
+  </form>
+
+  <form *ngIf="isLogin" >
+      <p class="pLogin">用户名:{{uName}}</p>
+      <p class="pLogin">用户组:{{power=="user"?"普通用户":"管理员"}}</p>
+      <button  class="pLogin" *ngIf="power=='admin'" routerLink="/index/publish">发布文章</button>
+      <button  class="pLogin" (click)="logout()">注销登录</button>
+  </form>
+
+  <br><br>
+  <p>本站不提供文件下载，请不要</p>
+  <p>发布下载地址。</p>
+  <br><br><br><br>
+  <p>最新评论</p>
+  <ul>
+    <li>暂无最新评论</li>
+  </ul>
+</div>

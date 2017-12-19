@@ -1,0 +1,42 @@
+#navlist{
+    display: none;
+}
+
+#s-navlist{
+    width: 50%;
+    height: 220px;
+    margin: 0 auto;
+}
+#s-navlist ul{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    list-style: none;
+}
+
+#s-navlist ul li{
+    text-align: center;
+    height: 20%;
+    text-decoration: none;
+    color: white;
+
+}
+
+#s-navlist ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height:44px;
+    text-decoration: none;
+    color: white;
+    transition: .2s ease-in-out;
+
+}
+
+#s-navlist ul li a:hover{
+    border-radius: 10px;
+    background: white;
+    color: #0085ba;
+
+}

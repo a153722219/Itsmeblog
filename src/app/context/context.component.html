@@ -1,0 +1,35 @@
+
+<div id="page">
+  <storeHeader></storeHeader>
+  <div id="content">
+    <div id="left">
+      <article>
+        <header>
+          <a class="a-context">{{art.art_title}}</a>
+          <div class="div-tp">
+            <span>发表于</span>
+            <span class="div-t"> {{art.art_time}} </span>
+            <span>由</span>
+            <span class="div-p"> admin</span>
+          </div>
+        </header>
+        <div class="a-content">
+          <p class="p-content">{{art.art_ctx}}</p>
+          <img [src]="art.art_img" width="584" height="342"/>
+        </div>
+        <footer>
+          <span>发表在</span> <span class="p-span">{{art.art_bk==1?"文章":"动画"}}</span>
+        </footer>
+      </article>
+    </div>
+    <storeLogin></storeLogin>
+    <storeReview [sId]="this.Id"></storeReview>
+  </div>
+  <storeFooter></storeFooter>
+</div>
+
+
+
+
+
+

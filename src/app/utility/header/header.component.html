@@ -1,0 +1,21 @@
+<header class="top">
+    <div class="hgroup">
+      <h1><a routerLink="news"> 个人博客</a> </h1>
+      <h2><a> XX的个人博客</a> </h2>
+    </div>
+
+
+    <input type="text" id="search" placeholder="搜索"/>
+
+  <img src="images/logo.jpg" style="cursor: pointer" height="350px">
+</header>
+
+<!-- 导航部分 -->
+<nav class="nav-top">
+  <a [routerLink]="['/index/news',{id:'news'}]">最新更新</a>
+  <a [routerLink]="['/index/news',{id:'aritle'}]">文章</a>
+  <a [routerLink]="['/index/news',{id:'animate'}]">动画</a>
+  <a routerLink="/index/about">关于我</a>
+</nav>
+
+

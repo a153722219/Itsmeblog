@@ -1,0 +1,17 @@
+<div id="left">
+  <form id="new" enctype="multipart/form-data">
+    <fieldset>
+      <legend>发表新文章</legend>
+      <p><label for="title">文章标题:  </label><input type="text" [(ngModel)]="title" placeholder="不少于6个字" id="title" name="title"></p>
+      <p><label for="bk">文章:  </label>
+        <select name="bk" [(ngModel)]="bk" id="bk">
+          <option value="1">文章</option>
+          <option value="2">动画</option>
+        </select>
+      </p>
+      <p><label for="ctx">文章内容:  </label><textarea id="ctx" [(ngModel)]="ctx" placeholder="不少于15个字" name="ctx"></textarea></p>
+      <p><label for="upimg"><input type="file" name="upimg"id="upimg"> </label> </p>
+      <p><input type="submit"  (click)="addArt()"  value="发表"></p>
+    </fieldset>
+  </form>
+</div>

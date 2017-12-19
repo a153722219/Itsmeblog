@@ -1,0 +1,17 @@
+<div id="plq">
+  <div class="pl" *ngFor="let item of pList">
+    <img src="images/toux.png">
+    <p class="ct">{{item.pl_ctx}}</p>
+    <p class="ps">用户{{item.pl_user}}</p>
+  </div>
+</div>
+
+<div id="fbpl">
+  <form action="#" method="post">
+    <h3>发表评论</h3>
+    <h6>您的个人信息不会被公开。必填项用*号标注</h6>
+    <textarea name="context" [(ngModel)]="ctx" placeholder="说点啥吧.."></textarea>
+    <input (click)="addReview()" type="submit" value="发表评论">
+  </form>
+
+</div>

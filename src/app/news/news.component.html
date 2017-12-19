@@ -1,0 +1,33 @@
+<div id="left">
+  <article *ngFor="let item of aList">
+    <header>
+      <a [routerLink]="['/context',{Id:item.Id}]">{{item.art_title}}</a><a class="img-a"> {{item.pcount}}</a>
+      <div class="div-tp">
+        <span>发表于</span>
+        <span class="div-t"> {{item.art_time}} </span>
+        <span>由</span>
+        <span class="div-p"> admin</span>
+      </div>
+    </header>
+    <div class="a-content">
+      <img [src]="item.art_img" width="584" height="342"/>
+      <p class="p-content">{{item.art_ctx}}</p>
+      <p><a [routerLink]="['/context',{Id:item.Id}]">继续阅读 →</a></p>
+    </div>
+    <footer>
+      <span>发表在</span> <span class="p-span">动画</span>
+    </footer>
+    <hr />
+  </article>
+
+  <div id="wp_page_numbers">
+    <ul>
+      <li class="page_info">{{pno}}/{{maxPage}}</li>
+      <li *ngIf="pno>1" (click)="getAritle(pno-1)"><a><</a></li>
+      <li *ngIf="pno>1" (click)="getAritle(pno-1)"><a>{{pno-1}}</a></li>
+      <li class="select_li"><a>{{pno}}</a></li>
+      <li *ngIf="pno<maxPage"  (click)="getAritle(pno+1)"><a>{{pno+1}}</a></li>
+      <li  *ngIf="pno<maxPage" (click)="getAritle(pno+1)"><a>></a></li>
+    </ul>
+  </div>
+</div>

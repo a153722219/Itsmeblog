@@ -1,0 +1,96 @@
+html{
+    background: url("../images/reg-bg.jpg")  no-repeat ;
+    background-size: cover;
+
+}
+
+body{
+    margin:0 auto;
+    width: 320px;
+    height: auto;
+    margin-top: 210px;
+}
+
+body .tittle{
+    font-family: "STXINWEI";
+    font-size: 52px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.regwin{
+    width: 320px;
+    height: 345px;
+    background: #3a518e;
+    box-shadow: #858585 1px 1px 10px 1px;
+    margin-top: 29px;
+    font-size: 15px;
+    color: white;
+    zoom: 1;
+    overflow: hidden;
+}
+.regwin p{
+    display: block;
+    margin-top: 32px;
+    margin-left: 26px;
+    margin-bottom: 5px;
+    zoom: 1;
+    overflow: hidden;
+}
+.regwin .p-result{
+    margin-left: 10px;
+}
+
+.regwin .checkbox{
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin: 0;
+}
+.regwin .login{
+    width: 52px;
+    height: 29px;
+    background: #0085ba;
+    color:white ;
+    border-radius:3px ;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 75px;
+}
+.regwin .return{
+    margin-left: 0;
+    margin-top: 10px;
+    width:90px;
+    height: 40px;
+}
+.regwin .login:hover{
+    border: 1px black solid;
+}
+
+.regwin .img{
+   margin:  auto;
+    width: 100px;
+    height: 100px;
+    margin-top: 80px;
+}
+.regwin input{
+    margin: 0;
+    padding: 0;
+    margin-left: 26px;
+    width: 272px;
+    height:40px;
+    border: none;
+    font-size: 130%;
+    text-indent: 5px;
+}
+.regwin .p2{
+    margin-bottom: 5px;
+    margin-top: 21px;
+}
+footer p a{
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-left: 25px;
+}

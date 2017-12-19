@@ -1,0 +1,382 @@
+body{
+    margin: 0px;
+    background: url("../../images/bg.png");
+
+}
+
+#page{
+    width: 1025px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.top{
+    background: #0f0f0f;
+    width: 1025px;
+    height: 571px;
+
+}
+h1,h2{
+    margin-top: 0;
+}
+
+.top .hgroup{
+   width: 1025px;
+    height: 198px;
+    text-indent: 77px;
+    position: relative;
+}
+.top .hgroup h1 a{
+    color: #eeeeee;
+    font-size: 31px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "simhei";
+    position: relative;
+    top: 64px;
+}
+
+#search{
+    width: 70px;
+    height: 20px;
+    border: none;
+    background:url("../images/search.gif") no-repeat #dddddd;
+    text-indent: 20px;
+    position: relative;
+    top:-100px;
+    left:805px;
+    transition: 0.5s;
+}
+.top .hgroup h1 a:hover{
+    color: #1982d1;
+}
+.top .hgroup h2 a{
+    position: relative;
+    top: 38px;
+    font-size: 14px;
+    color: #858585;
+
+}
+hr{
+    border: 1px solid #eeeeee;
+    margin: 0;
+}
+
+.nav-top{
+    width: 1025px;
+    height: 44px;
+    background: url("../images/nav-bg.gif") repeat-x;
+    line-height: 44px;
+    text-indent: 83px;
+}
+.nav-top a{
+    color: #eeeeee;
+    text-decoration: none;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    height: 44px;
+    font-size: 13px;
+    font-weight: bold;
+    text-indent: 0px;
+}
+.nav-top a:hover{
+    background: #f4f4f4;
+    color: #373737;
+}
+
+#content{
+    zoom: 1;
+    overflow: hidden;
+    width: 1025px;
+    height: auto;
+    background: #0f0f0f;
+
+}
+#left{
+    float: left;
+    width: 715px;
+    height: auto;
+    background: #0f0f0f;
+}
+#wp_page_numbers{
+    width: 584px;
+    height: 32px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: #4f4f4f;
+    border-top: 2px solid black;
+    color: #dddddd;
+    padding-left: 8px;
+    color: #ddd;
+    font-size: 11px;
+    line-height: 32px;
+}
+#wp_page_numbers .page_info{
+    width: auto;
+    height:32px;
+    line-height: 32px;  margin-left: 20px;
+
+}
+
+#wp_page_numbers .page_info:hover{
+    background: #4f4f4f;
+
+}
+
+#plq{
+    width: 100%;
+    height: auto;
+    background:#111111 ;
+    clear: both;
+    border-top:1px #222222 solid ;
+}
+
+#fbpl{
+    width: 70%;
+    margin:30px auto;
+    height: 500px;
+    background: #242424;
+    border-radius: 15px;
+    position: relative;
+}
+#fbpl h3{
+    color: #cccccc;
+    margin-bottom: 5px;
+   position: absolute;
+    top: 15px;
+    left: 30px;
+}
+#fbpl h6{
+    color: #cccccc;
+    margin: 0;
+    position: absolute;
+    top: 60px;
+    left: 30px;
+}
+#fbpl textarea{
+    position: absolute;
+    top: 90px;
+    left: 30px;
+    width: 90%;
+    height: 60%;
+    border: 5px solid #111111;
+    background: #000;
+    font: 20px/35px "΢���ź�";
+    color: white;
+}
+#fbpl input[type=submit]{
+    width: 150px;
+    height: 42px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#plq .pl{
+    position: relative;
+    width: 90%;
+    height: 150px;
+    margin: 0 auto;
+    border-bottom: 1px #ccc solid;
+}
+#plq .pl img{
+   position: absolute;
+    top: 20px;
+    left: 66px;
+}
+#plq .pl .ct{
+    display: inline-block;
+    color: white;
+    position: absolute;
+    top:10px;
+    left: 200px;
+
+}
+
+#plq .pl .ps{
+    color:#1b83c0;
+    display: inline-block;
+    position: absolute;
+    top:110px;
+    left: 90px;
+}
+
+#wp_page_numbers ul{
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    margin:0;
+    padding: 0;
+}
+.select_li{
+    background: black;
+}
+
+#wp_page_numbers ul li{
+    width: 32px;
+    height: 32px;
+    list-style: none;
+    float: left;
+    margin-left: 20px;
+    text-align: center;
+}
+#wp_page_numbers ul li:hover{
+    background: black;
+}
+
+#wp_page_numbers ul li a{
+    color: #dddddd;
+    text-decoration: none;
+}
+
+#wp_page_numbers ul li a:hover{
+    text-decoration: underline;
+}
+#left article{
+width: 584px;
+height: auto;
+margin: 0 auto;
+ margin-top: 54px;
+}
+
+#left article header a{
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    width:469px;
+    color: #dddddd;
+    font-size: 26px;
+}
+#left article header a:hover{
+    color: #1982d1;
+}
+#left article header .img-a{
+    cursor: pointer;
+    background: #282828 url(../images/comment-bubble-dark.png) no-repeat;
+    border-color: #222;
+    color: #888;
+    display: inline-block;
+    width: 43px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 15px;
+    text-align: center;
+    float: right;
+}
+
+#left article header .img-a:hover{
+    background: #1982d1 url(../images/comment-bubble-dark.png) no-repeat;
+    color: white;
+
+}
+.div-tp{
+    font-size: 11px;
+    width: auto;
+    height: 25px;
+    line-height: 25px;
+    font-weight: bold;
+}
+.div-tp span{
+    color: #dddddd;
+}
+.div-tp .div-t{
+    color: #1982d1;
+}
+.div-tp .div-p{
+    color: #1982d1;
+}
+
+.a-content{
+    padding: 1.625em 0 0;
+    color: #eeeeee;
+}
+.a-content .p-content{
+    margin-top: 0;
+}
+
+.a-content p a{
+    color: #1982d1;
+    text-decoration: none;
+}
+.a-context:hover{
+    color: white!important;
+}
+
+.a-content p a:hover{
+    color: #1982d1;
+    text-decoration:underline;
+}
+
+#left article footer{
+    height: 18px;
+    line-height: 18px;
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+#left article footer .p-span{
+    color: #1982d1;
+}
+
+
+#right{
+    float: right;
+    width: 280px;
+    height: auto;
+    color: #ccccba;
+    padding-top: 50px;
+    font-size: 13px;
+}
+#right p{
+    margin: 0;
+
+}
+#right .pLogin{
+    margin-top: 15px;
+}
+#right .link{
+    color: #1982d1;
+    font-size:13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+#right .link:hover{
+    text-decoration: underline;
+}
+.bottom-1{
+    width: 1025px;
+    height: 215px;
+    background: #0f0f0f;
+    border-top: 1px #222222 solid ;
+    color:#bbbbaa;
+    font-size: 12px;
+    zoom: 1;
+    overflow: hidden;
+}
+.bottom-1 .left{
+    float: left;
+    margin-top: 37px;
+    margin-left: 98px;
+}
+
+.bottom-1 .right{
+    width:350px;
+    float: right;
+    margin-top: 37px;
+    margin-right: 100px;
+
+}
+.bottom-2{
+    background: #000000;
+    color: #ffffff;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    font-size: 11px;
+    text-align: center;
+}
